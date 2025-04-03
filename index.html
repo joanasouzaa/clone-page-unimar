@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -13,6 +14,7 @@
         <div class="container header-content">
             <img src="./assets/images/logo.png" alt="Logo Unimar" class="logo">
             <nav>
+                <button class="menu-toggle"><i class="fa fa-bars"></i></button>
                 <ul>
                     <li><a href="#">Universo Unimar</a></li>
                     <li><a href="#">Cursos</a></li>
@@ -35,21 +37,24 @@
 
     <section class="container">
         <div class="info-grid">
-            <h3>+50</h3>
-            <p>Cursos Oferecidos</p>
+            <div class="info-item">
+                <h3>+50</h3>
+                <p>Cursos Oferecidos</p>
+            </div>
+            <div class="info-item">
+                <h3>+10k</h3>
+                <p>Alunos Formados</p>
+            </div>
+            <div class="info-item">
+                <h3>500+</h3>
+                <p>Docentes Qualificados</p>
+            </div>
+            <div class="info-item">
+                <h3>10+</h3>
+                <p>Polos no Brasil</p>
+            </div>
         </div>
-        <div class="info-item">
-            <h3>+10k</h3>
-            <p>Alunos Formados</p>
-        </div>
-        <div class="info-item">
-            <h3>500+</h3>
-            <p>Docentes Qualificados</p>
-        </div>
-        <div class="info-item">
-            <h3>10+</h3>
-            <p>Polos no Brasil</p>
-        </div>
+
     </section>
 
     <section class="container">
@@ -66,6 +71,10 @@
             <div class="modalidade-card">
                 <h3>Mestrado</h3>
                 <p>Programas stricto sensu reconhecidos</p>
+            </div>
+            <div class="modalidade-card">
+                <h3>Extensão</h3>
+                <p>Cursos de atualização profissional</p>
             </div>
         </div>
     </section>
@@ -84,8 +93,8 @@
             </div>
         </div>
     </footer>
-    <div class="theme-toggle">
-        Tema
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <i class="fa fa-moon-o"></i>
     </div>
 
     <script src="/assets/js/script.js"></script>
